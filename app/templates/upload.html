@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2> Upload your file!</h2>
+
+This file will be processed and returned to the email you input below.  Make sure it's the email you want it sent to!<br>
+<br>
+
+ <form action="upload" method="post" enctype="multipart/form-data">
+        Email: <input type="text" name="email"><br><br>
+        <input type="file" name="file"><br/><br />
+        <p><button type="submit">Send</button></p>
+      </form>
+{% endblock %}

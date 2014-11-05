@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1> Enter an email to validate if it's accurate</h1>
+
+<form method="post" action="{{ url_for('validatereturn') }}" >
+<p><label>Email: </label><input type="text" name"email" required></p>
+<p><button type="submit">Send</button></p>
+</form>
+
+{% endblock %}

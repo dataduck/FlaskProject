@@ -1,0 +1,21 @@
+<html>
+	<head>
+	   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+          rel="stylesheet">
+		{% if title %}
+		<title>You are in the Qualiseum!</title>
+		{% else %}
+		<h1>Welcome to the Qualiseum</h1>
+		{% endif %}
+	</head>
+	<body>
+		<div><a href="/index">Contact Lookup</a> | 
+		<a href="/upload"> CSV Upload</a> | <a href="/validate">Email Validation</a> |
+	</div>
+	
+
+	{% block content %}{% endblock %}
+	</body>
+	
+</html>
+
